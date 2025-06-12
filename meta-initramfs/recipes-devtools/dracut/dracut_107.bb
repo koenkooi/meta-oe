@@ -68,9 +68,9 @@ CONFFILES:${PN} += "${sysconfdir}/dracut.conf"
 RDEPENDS:${PN} = "findutils cpio util-linux-blkid util-linux-getopt util-linux bash"
 
 # This could be optimized a bit, but let's avoid non-booting systems :)
-RRECOMMENDS:${PN} = "kernel-modules \
-                     coreutils \
-                    "
+RRECOMMENDS:${PN}:class-target = "kernel-modules \
+                                  coreutils \
+                                 "
 
 BBCLASSEXTEND = "native nativesdk"
 
