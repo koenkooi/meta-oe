@@ -72,4 +72,6 @@ RRECOMMENDS:${PN} = "kernel-modules \
                      coreutils \
                     "
 
+BBCLASSEXTEND = "native nativesdk"
+
 CVE_STATUS[CVE-2010-4176] = "not-applicable-platform: Applies only to Fedora"
